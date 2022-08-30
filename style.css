@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Carrois Gothic SC', sans-serif;
+    text-decoration: none; 
+    
+    
+}
+
+
+.header {
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/SaintsFacility.jpg); 
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+.nav {
+    display:flex;
+    padding: 2% 6%; 
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+
+body {
+    background-color: #FFFFF0; 
+}
+
+
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px; 
+    position: relative; 
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none; 
+    font-size: 13px; 
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #D8BB5D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+.text-box {
+    width:90%; 
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px; 
+    font-size: 14px;
+    color: #fff; 
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent; 
+    position: relative; 
+    cursor: pointer; 
+}
+
+.btn:hover {
+    border: 1px solid #91760d;
+    background: #91760d; 
+    transition: 0.8s; 
+}
+
+nav .fa {
+    display: none; 
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px; 
+    }
+    
+    .nav-links ul li {
+        display:block; 
+    }
+    .nav-links {
+        position: absolute; 
+        height: 100vh;
+        width: 176px;
+        top: 0;
+        right: 0; 
+        text-align: left;
+        z-index: 2; 
+    }
+    
+    
+ 
+   
+    
+    .nav-links ul {
+        padding: 29px; 
+    }
+    
+    .image_atlanta {
+    height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    
+     .image_carolina {
+    height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    
+     .image_tampa_bay {
+    height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    
+    
+    
+}
+
+/* ---- key players */ 
+    .players {
+        width: 70%;
+        margin: auto;
+        text-align: center; 
+        padding-top: 100px; 
+    }
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #FFFCD1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 22px;
+    box-sizing: border-box; 
+    transition: 0.5s; 
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0; 
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2); 
+}
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column; 
+    }
+}
+
+/*--- stadium --- */ 
+
+.stadium {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px; 
+}
+
+.stadium-col {
+    flex-basis: 32%;
+    border-radius: 10px; 
+    margin-bottom: 30px; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.stadium-col img{
+    width:100%; 
+}
+
+.layer {
+    background: transparent;  
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: 0.5s; 
+}
+
+.layer:hover {
+    background: rgba(128,0,0,0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1; 
+}
+
+/*-- coaches --- */ 
+
+.coaches {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center; 
+}
+
+.coaches-row {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #FFFCD1;
+    padding: 25px;
+    cursor: pointer;
+    display:flex; 
+}
+
+
+.coaches-row img {
+    height: 60px;
+    margin-right: 30px;
+    border-radius: 60%; 
+}
+
+.coaches-row p {
+    padding: 0; 
+    
+}
+
+.coaches-row h3 {
+    margin-top: 10px; 
+    text-align: left;
+    
+}
+
+/* footer */ 
+.footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden; 
+    padding: 70px 0; 
+    box-sizing: border-box; 
+    background-color: #18181a;
+    
+}
+
+.inner_footer {
+    display:block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%; 
+}
+
+.inner_footer .logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block; 
+}
+
+.inner_footer .logo_container img{
+    width: 95px;
+    height: auto; 
+}
+
+.inner_footer .footer_third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float:left;
+    height: 100%; 
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0; 
+} 
+
+.inner_footer .footer_third h1{
+    font-family: 'arial';
+    font-size: 22px;
+    color:white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.inner_footer .footer_third a{
+    font-family: 'arial';
+    font-size: 17px;
+    color:white;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px; 
+}
+
+.inner_footer .footer_third li {
+    display: inline-block;
+    padding 0 15px; 
+    font-size: 20px; 
+}
+
+.inner_footer .footer_third span{
+    color: white;
+    font-family: 'arial'; 
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%; 
+    padding-top: 20px; 
+}
+
+@media(max-width: 600px) {
+    .footer .inner_footer {
+        width: 90%;
+        
+    }
+    
+    .inner_footer .logo_container,
+    .inner_footer .footer_third {
+        width: 100%;
+        margin-bottom: 30px; 
+    }
+}
+
+/* -------- rivals page --------- */ 
+
+.sub-header {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/rivarly.jpg); 
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff; 
+    
+}
+
+.about-us {
+    width: 50%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px; 
+}
+
+
+img {
+    width: 60%; 
+     
+}
+
+body {
+    
+    font-family: 'Roboto', 'sans-serif'; 
+}
+
+.mytabs {
+    display:flex; 
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 25px; 
+}
+
+.mytabs input[type="radio"] {
+    display: none; 
+}
+
+
+
+
+
+
+
+.mytabs2 {
+    display:flex; 
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 25px; 
+} 
+
+
+.mytabs2 .tab {
+    width: 100%;
+    padding: 20px; 
+   
+    order:1; 
+}
+
+.mytabs2 input[type="radio"] {
+    display: none; 
+}
+
+.mytabs3 {
+    display:flex; 
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 25px; 
+}
+
+
+
+
+
+.mytabs3 input[type="radio"] {
+    display: none; 
+}
+
+.image_atlanta {
+    margin-top: -50px;
+    width: 25%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_carolina {
+    width: 25%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_tampa_bay {
+    width: 25%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wording {
+    padding-bottom: 5%; 
+    padding-top: 5%; 
+    color:black;
+} 
+
+.rival_img {
+    width: 100%; 
+}
+
+
+/* -------- history page --------- */ 
+
+.sub_header {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/saints_history.jpg); 
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff; 
+    
+}
+
+.timeline {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto; 
+    position: relative; 
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: #FFFCD1; 
+    color:black;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0; 
+}
+
+.timeline ul li:first-child {
+    margin-top: 25px; 
+}
+
+.timeline-content h1 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    
+}
+
+.timeline-content .date {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px; 
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline:before {
+        content: ''; 
+        position: absolute; 
+        height: 100%; 
+        width: 2px;
+        left: 50%; 
+        transform: translateX(-50%);
+        background-color: black; 
+    }
+    
+    
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative; 
+        
+    }
+    
+    .timeline ul li:nth-child(odd) {
+        float:left;
+        clear: right; 
+        transform: translateX(-60px); 
+        border-radius: 20px 0px 20px 20px; 
+    }
+    
+    .timeline ul li:nth-child(even) {
+        float:right;
+        clear:left; 
+        transform:translateX(60px); 
+        border-radius: 0px 20px 20px 20px;
+        
+        
+    }
+    
+    .timeline ul li:after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        border-radius: 50%; 
+        top:0;
+    }
+    
+    .timeline ul li:nth-child(odd):after {
+        transform: translate(50%, -50%); 
+        right: -20px; 
+    }
+    
+    .timeline ul li:nth-child(even):after {
+        transform: translate(50%, -50%); 
+        left: -40px; 
+    }
+    
+    .timeline ul li:hover:after{
+        background-color:crimson
+    }
+    
+    .timeline-content .date {
+        position: absolute; 
+        top: -20px;
+    }
+     
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
